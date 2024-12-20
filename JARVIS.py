@@ -48,6 +48,8 @@ engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice',voices[0].id) #index '0' for 'David'(male) voice index '1' for 'zira'(female) voice
 
+secret = "notAGoodWayToUsePasswords"
+
 #Main classs where all the functiona are present
 class MainThread(QThread):
     def __init__(self):
