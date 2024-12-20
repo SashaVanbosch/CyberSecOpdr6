@@ -48,6 +48,11 @@ engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice',voices[0].id) #index '0' for 'David'(male) voice index '1' for 'zira'(female) voice
 
+secret = "aws_access_key=AKIAIOSFODNN7EXAMPLE"
+API_KEY = "12345-abcde-secret-key"
+user_input = "dummy_value"
+query = f"SELECT * FROM users WHERE username = '{user_input}'"
+
 #Main classs where all the functiona are present
 class MainThread(QThread):
     def __init__(self):
